@@ -35,18 +35,17 @@ get_header(); ?>
 
 			<?php 
 
-				
-
-
+				$args = array (
+					'link' => 'view',
+				);
 
 				echo '<ul>';
-					wp_list_categories($args);
+					wp_tag_cloud($args);
 				echo '</ul>';
 
 			?>
 
 		</div><!-- End of tags-container-->
-
 
 
 		<?php endwhile; // End of the loop. ?>
