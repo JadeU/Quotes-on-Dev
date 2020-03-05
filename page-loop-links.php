@@ -12,12 +12,34 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?> 
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 	<section class= "all-content-container">
+		
+		<h1 class="header-title">Archives</h1> 
 
-		<div class ="categories-container">
-			<?php 
+			<div class= "authors-container"> 
+					
+				<h2 class= "header-sub-title">Author</h2>
+
+			<ul>
+				<?php $args = array( 'post_type' => 'post', 'order' => 'ASC', 'posts_per_page' => -1 );
+				
+				$author_name = get_posts( $args ); ?>
+
+				<?php foreach ( $author_name as $post ) : setup_postdata( $post ); ?>
+
+				<li><a href="<?php the_permalink()?>"><?php the_title();?></a></li>
+
+				<?php endforeach; wp_reset_postdata(); ?>
+			</ul>
+		</div><!-- End of authors-container-->
+			
+			
+	<div class ="categories-container">
+
+		<h2 class= "header-sub-title">Categories</h2>
+			
+			<?php
 
 				 $args = array(
 					'show_option_all' => 'All categories',
@@ -33,6 +55,8 @@ get_header(); ?>
 
 		<div class ="tag-container">
 
+			<h2 class="header-sub-title">Tags</h2>
+		 
 			<?php 
 
 				$args = array (
@@ -52,8 +76,6 @@ get_header(); ?>
 
 </div><!--End of all-content-container-->
 			
-
-		
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
