@@ -15,7 +15,9 @@ html {
 }
 
 body {
-  background: $color_main-background; /* Fallback for when there is no custom background color defined. */
+  background: $color_main-background; 
+.logged-in{
+  color: white;
 }
 
 blockquote,

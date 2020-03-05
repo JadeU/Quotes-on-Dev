@@ -27,7 +27,7 @@
 				</div><!-- .site-branding -->
 
 				<div class="header-logo">
-						<a href="http://localhost:8888/quotes-on-dev/">
+						<a href="http://localhost:8888/quotes-on-dev//">
 							<img src="<?php echo get_template_directory_uri();?>/images/qod-logo.svg"   alt="Quotes on Dev logo">
 						</a>
 					</div>	
