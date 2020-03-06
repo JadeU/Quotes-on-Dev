@@ -10,14 +10,16 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<div class = "quote-sumbit-form-container">
 
-				<form name="quote-submit-form" id="quote-submit-form">
+				
 
+				<?php if( is_user_logged_in() && current_user_can( 'edit_posts' ) ): ?>
+
+					<form name="quote-submit-form" id="quote-submit-form">
 
 							<div class= "form"> 
 
@@ -25,13 +27,11 @@ get_header(); ?>
 
 								<input type="text" name="quote-author" id="quote-author" >
 
-							</div> 
-
-
+							</div>
 
 							<div class="form">
 
-								<label for="the-quote">Quote</label>
+								<label for="the-quote"><p>Quote</p></label>
 
 								<textarea rows="4" cols="30" name="the-quote" id="the-quote" ></textarea>
 
@@ -51,16 +51,26 @@ get_header(); ?>
 
 								<label for="quote-source-url"><p>Provide the URL or the quote source, if available.</p></label>
 
-								<input type="text" name="quote-source-url"id="quote-source-url">
+								<input type="url" name="quote-source-url"id="quote-source-url">
 
 							</div>
 
-					</form>
 
-				</div>
+							<input type="submit" value="Sumbit">
+							
+								<?php else: ?>
 
-			<?php endwhile; // End of the loop. ?>
+									<h2>Sorry, you must be logged in to submit a quote!</h2>
 
+									<a id="submit" href="<?php echo ( wp_login_url() )?>">Click here to log in.<a>
+
+					<?php endif;?>
+
+				</form>
+
+				<p class="submit-success" style="display: none;">Success! Your quote has been submitted.</p> 
+
+			</div><!-- #quote-submit-form-container -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

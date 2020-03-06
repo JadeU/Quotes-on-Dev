@@ -63,8 +63,8 @@ function qod_scripts() {
 	wp_enqueue_script( 'qod-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array('jquery'), '20151215', true );
 	wp_localize_script( 'qod_api', 'api_vars', array(
 		'nonce' => wp_create_nonce( 'wp_rest' ),
-		'success' => 'Thanks, your submission was received!',
-		'failure' => 'Your submission could not be processed.',
+		'url' => esc_url_raw(rest_url()),
+
 	  ) );
 	
 
