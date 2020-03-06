@@ -10,10 +10,13 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
+			<div class="site-info">
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button> 
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					<p class="bottom">Brought to you by Jade, at <a class="red-link" href="https://redacademy.com">Red Academy</a></p>
+				</nav><!-- #site-navigation -->
 				</div><!-- .site-info -->
-			</nav><!-- #site-navigation -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

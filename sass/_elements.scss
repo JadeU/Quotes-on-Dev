@@ -18,6 +18,7 @@ body {
   background: $color_main-background; 
 .logged-in{
   color: white;
+  }
 }
 
 blockquote,
@@ -44,6 +45,7 @@ ol {
 
 ul {
   list-style: none;
+  font-family: 'Exo';
 }
 
 ol {
@@ -52,8 +54,8 @@ ol {
 
 li > ul,
 li > ol {
-  margin-bottom: 0;
   margin-left: $base__space-unit;
+  text-decoration: none;
 }
 
 dt {
@@ -72,4 +74,4 @@ img {
 table {
   margin: 0 0 $base__space-unit;
   width: 100%;
-}
+} 

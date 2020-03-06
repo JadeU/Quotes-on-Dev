@@ -19,7 +19,7 @@ get_header(); ?>
 
 			<div class= "authors-container"> 
 					
-				<h2 class= "header-sub-title">Author</h2>
+				<h2 class= "header-sub-title">Quote Author</h2>
 
 			<ul>
 				<?php $args = array( 'post_type' => 'post', 'order' => 'ASC', 'posts_per_page' => -1 );

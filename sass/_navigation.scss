@@ -29,8 +29,10 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
   width: 100%;
+  display: flex;
+  justify-content: flex-end; 
+
 
   ul {
     display: none;
@@ -87,6 +89,8 @@ a {
   a {
     display: block;
     text-decoration: none;
+    font-family: 'Exo';
+    padding: 10px;
   }
 
   .current_page_item > a,

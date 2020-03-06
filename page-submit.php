@@ -56,7 +56,7 @@ get_header(); ?>
 							</div>
 
 
-							<input type="submit" value="Sumbit">
+							<input type="submit" value="Sumbit Quote">
 							
 								<?php else: ?>
 
