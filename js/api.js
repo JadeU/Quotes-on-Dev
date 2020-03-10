@@ -41,7 +41,7 @@
         $('.submit-success').text('Success! Your quote has been submitted.')
       })
       .fail(function() {
-        $('.submit-error').text('Oh, try again!')
+        $('.submit-error').text('An error occurred. Please try again.')
       })
     });
    
@@ -61,7 +61,7 @@
         
           let valUrl = $('#quote-source-url').val();
         
-          console.log('click');
+        
         
           $.ajax({
             method: 'get',
@@ -73,15 +73,13 @@
               '_qod_quote_source_url': valUrl,
               'status': 'publish'
             },
-            // beforeSend: function(xhr) {
-            //     xhr.setRequestHeader('X-WP-Nonce', api_vars.wpapi_nonce)
-            // }
+            
           }).done(function(data) {
             for(let i = 0; i < data.length; i++) {
                 $('#random-quote-container')
                 .empty()
                 .append(`
-                <p>${data[i].content.rendered}</p>
+                <p${data[i].content.rendered}</p>
                 <h3> - ${data[i].title.rendered}</h3>
                 <a href="${data[i]._qod_quote_source_url}">
                 ${data[i]._qod_quote_source}
@@ -90,16 +88,6 @@
               history.pushState({}, '', data[i].link)
 
             }
-
-             
-
-            console.log('content', data[0].content.rendered);
-            console.log('title', data[0].title.rendered);
-            console.log('url', data[0]._qod_quote_source_url)
-
-            document.getElementById("random-quote-container").html("");
-            $('#random-quote-container').append("");
-        
 
           });
         });

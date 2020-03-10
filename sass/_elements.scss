@@ -83,13 +83,15 @@ table {
     position: absolute;
     font-size: 200px;
     content: '\f10d';
-    left: -175px,
+    left: -175px;
+    color:white
     
   }
   &:before {
     position: absolute;
     font-size: 200px;
     content: '\f10e';
-    right: -175px,
+    right: -175px;
+    color: white 
   }
 }

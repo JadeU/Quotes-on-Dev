@@ -12,7 +12,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<i class="fas fa-quote-left"></i>
+			
 
 					<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
