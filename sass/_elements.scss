@@ -75,3 +75,21 @@ table {
   margin: 0 0 $base__space-unit;
   width: 100%;
 } 
+
+
+#random-quote-container {
+  position: relative;
+  &:before {
+    position: absolute;
+    font-size: 200px;
+    content: '\f10d';
+    left: -175px,
+    
+  }
+  &:before {
+    position: absolute;
+    font-size: 200px;
+    content: '\f10e';
+    right: -175px,
+  }
+}

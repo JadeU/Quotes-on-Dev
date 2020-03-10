@@ -12,7 +12,12 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+		<div id="random-quote-container">
+
+	
+		</div>
+
+			<input type="submit" id="generate-btn" value="Show me Another!">
 
 			<?php endwhile; // End of the loop. ?>
 

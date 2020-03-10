@@ -25,7 +25,7 @@ get_header(); ?>
 
 								<label for="quote-author"><p>Author of Quote</p></label>
 
-								<input type="text" name="quote-author" id="quote-author" >
+								<input type="text" name="author" id="quote-author" >
 
 							</div>
 
@@ -33,7 +33,7 @@ get_header(); ?>
 
 								<label for="the-quote"><p>Quote</p></label>
 
-								<textarea rows="4" cols="30" name="the-quote" id="the-quote" ></textarea>
+								<textarea rows="4" cols="30" name="quote" id="the-quote" ></textarea>
 
 							</div>
 
@@ -42,7 +42,7 @@ get_header(); ?>
 
 								<label for= "quote-source"><p>Where did you find this Quote? (e.g book name)<p></label>
 
-								<input type="text" name="quote-source" id="quote-source">
+								<input type="text" name="source" id="quote-source">
 
 							</div>
 
@@ -51,7 +51,7 @@ get_header(); ?>
 
 								<label for="quote-source-url"><p>Provide the URL or the quote source, if available.</p></label>
 
-								<input type="url" name="quote-source-url"id="quote-source-url">
+								<input type="url" name="source-url"id="quote-source-url">
 
 							</div>
 
@@ -68,7 +68,8 @@ get_header(); ?>
 
 				</form>
 
-				<p class="submit-success" style="display: none;">Success! Your quote has been submitted.</p> 
+				<p class="submit-success"></p> 
+				<p class="submit-error"></p> 
 
 			</div><!-- #quote-submit-form-container -->
 		</main><!-- #main -->

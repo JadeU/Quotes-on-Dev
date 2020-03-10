@@ -55,7 +55,7 @@ get_header(); ?>
 
 		<div class ="tag-container">
 
-			<h2 class="header-sub-title">Tags</h2>
+			<h2 class="header-sub-title">Tags</h2> 
 		 
 			<?php 
 

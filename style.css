@@ -394,6 +394,19 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
+#random-quote-container {
+  position: relative; }
+  #random-quote-container:before {
+    position: absolute;
+    font-size: 200px;
+    content: '\f10d';
+    left: -175px; }
+  #random-quote-container:before {
+    position: absolute;
+    font-size: 200px;
+    content: '\f10e';
+    right: -175px; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
