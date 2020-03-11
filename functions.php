@@ -57,6 +57,7 @@ add_filter( 'stylesheet_uri', 'qod_minified_css', 10, 2 );
  */
 function qod_scripts() {
 	wp_enqueue_style( 'qod-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'quotes-on-dev-style-font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css');
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'qod_api', get_template_directory_uri() . '/build/js/api.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'qod-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array('jquery'), '20151215', true );

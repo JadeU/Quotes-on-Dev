@@ -18,8 +18,10 @@ body {
   background: $color_main-background; 
 .logged-in{
   color: white;
+  max-width: $width-main;
+     }
   }
-}
+
 
 blockquote,
 q {
@@ -76,22 +78,33 @@ table {
   width: 100%;
 } 
 
-
-#random-quote-container {
-  position: relative;
-  &:before {
-    position: absolute;
-    font-size: 200px;
-    content: '\f10d';
-    left: -175px;
-    color:white
-    
-  }
-  &:before {
-    position: absolute;
-    font-size: 200px;
-    content: '\f10e';
-    right: -175px;
-    color: white 
-  }
+.inner-flex-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
+// #random-quote-container {
+//   position: relative;
+//   &:before {
+//     // position: absolute;
+//     // font-size: 200px;
+//     content: '\f10d';
+//     font-size: 100px;
+//     font-weight: 900;
+//     font-family: "Font Awesome 5 Free";
+//     // left: -175px;
+//     color:$color_green-brand-color;
+    
+//   }
+//   &:after {
+//     // position: absolute;
+//     // font-size: 200px;
+//     font-size: 100px;
+//     font-weight: 900;
+//     font-family: "Font Awesome 5 Free";
+//     content: '\f10e';
+//     // right: -175px;
+//     color: $color_green-brand-color;
+//   }
+// }

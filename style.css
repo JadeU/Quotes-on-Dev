@@ -218,6 +218,9 @@ td,
 th {
   padding: 0; }
 
+.site-content {
+  margin: 175px 300px; }
+
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
@@ -285,6 +288,8 @@ p {
   font-family: 'Exo';
   font-style: normal;
   font-weight: 300; }
+  p .single-post {
+    font-size: 24px; }
 
 dfn,
 cite,
@@ -346,7 +351,8 @@ html {
 body {
   background: #222222; }
   body .logged-in {
-    color: white; }
+    color: white;
+    max-width: 1120px; }
 
 blockquote,
 q {
@@ -394,20 +400,20 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
-#random-quote-container {
-  position: relative; }
-  #random-quote-container:before {
-    position: absolute;
-    font-size: 200px;
-    content: '\f10d';
-    left: -175px;
-    color: white; }
-  #random-quote-container:before {
-    position: absolute;
-    font-size: 200px;
-    content: '\f10e';
-    right: -175px;
-    color: white; }
+.inner-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -646,6 +652,14 @@ a {
 .page-links {
   clear: both;
   margin: 0 0 1.5rem; }
+
+.site-header {
+  text-align: center; }
+
+.site-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 /*--------------------------------------------------------------
 # Media
