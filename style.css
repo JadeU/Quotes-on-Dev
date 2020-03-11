@@ -350,9 +350,6 @@ html {
 
 body {
   background: #222222; }
-  body .logged-in {
-    color: white;
-    max-width: 1120px; }
 
 blockquote,
 q {
@@ -414,6 +411,12 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+.page-id-224 p {
+  font-size: 42px; }
+
+.page-id-224 .bottom {
+  font-size: 16px; }
 
 /*--------------------------------------------------------------
 # Forms

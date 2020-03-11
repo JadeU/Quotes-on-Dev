@@ -15,13 +15,12 @@ html {
 }
 
 body {
-  background: $color_main-background; 
-.logged-in{
-  color: white;
-  max-width: $width-main;
-     }
-  }
-
+  background: $color_main-background;
+  // .logged-in {
+  //   color: white;
+  //   max-width: $width-main;
+  // }
+}
 
 blockquote,
 q {
@@ -76,34 +75,44 @@ img {
 table {
   margin: 0 0 $base__space-unit;
   width: 100%;
-} 
+}
 
-.inner-flex-container{
+.inner-flex-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+
+.page-id-224 {
+  p {
+    font-size: 42px;
+  }
+}
+
+.page-id-224 {
+  .bottom {
+    font-size: 16px;
+  }
+}
+
 // #random-quote-container {
-//   position: relative;
+// //   // position: relative;
 //   &:before {
 //     // position: absolute;
 //     // font-size: 200px;
-//     content: '\f10d';
 //     font-size: 100px;
 //     font-weight: 900;
-//     font-family: "Font Awesome 5 Free";
+//     font-family: 'Font Awesome 5 Free';
 //     // left: -175px;
-//     color:$color_green-brand-color;
-    
+//     color: $color_green-brand-color;
 //   }
 //   &:after {
 //     // position: absolute;
 //     // font-size: 200px;
 //     font-size: 100px;
 //     font-weight: 900;
-//     font-family: "Font Awesome 5 Free";
-//     content: '\f10e';
+//     font-family: 'Font Awesome 5 Free';
 //     // right: -175px;
 //     color: $color_green-brand-color;
 //   }

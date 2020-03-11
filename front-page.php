@@ -27,55 +27,40 @@ get_header(); ?>
 				<i class="fas fa-quote-left"></i>
 
 			</div>
-<?php 
-				foreach ($rand_quote as $post) : setup_postdata ($post); ?>
+		
+	<?php 
+				
+		foreach ($rand_quote as $post) : setup_postdata ($post); ?>
 
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-		<div class="entry-content">
+				<div class="entry-content">
 
-	<?php the_content(); ?>
+					<?php the_content(); ?>
 
-</div><!-- .entry-content -->
+				</div><!-- .entry-content -->
 
-<div class="entry-header">
+		
+			<div class="entry-header">
 
-<?php the_title( '<h2 class="entry-title">— ', '</h2>' ); ?>
 
+			<?php the_title( '<h2 class="entry-title">— ', '</h2>' ); ?>
 
-</div><!-- .entry-header -->
-<input type="submit" id="generate-btn" value="Show me Another!">
+		</div><!-- .entry-header -->
+
+			<input type="submit" id="generate-btn" value="Show me Another!">
 </article><!-- #post-## -->
+
 <?php endforeach; wp_reset_postdata();?> 
 
-<div class= "flex-container-2">
+						<div class= "flex-container-2">
 
-			<i class="fas fa-quote-right"></i>
+								<i class="fas fa-quote-right"></i>
 
-			</div> 
-		
-
-
-
-
-			
-			
-			
-
-
-		
-	
-
-			
-
-
-
-
-			
-
-			
-		</div>  
+						</div> 
+						
+				</div>  
 
 			
 			
