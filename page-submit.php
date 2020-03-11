@@ -4,19 +4,21 @@
  *
  * @package QOD_Starter_Theme
  */
+?>
 
-get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<?php get_header(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'page' ); ?>
+<div id="primary" class="content-area">
+	
+	<main id="main" class="site-main" role="main">
+	
+		<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 
 			<div class = "quote-sumbit-form-container">
 
-				
-
+			
 				<?php if( is_user_logged_in() && current_user_can( 'edit_posts' ) ): ?>
 
 					<form name="quote-submit-form" id="quote-submit-form">

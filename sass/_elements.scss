@@ -86,13 +86,19 @@ table {
 
 .page-id-224 {
   p {
-    font-size: 42px;
+    font-size: 40px;
   }
 }
 
 .page-id-224 {
   .bottom {
     font-size: 16px;
+    margin-left: 10px;
+    margin-right: 60px;
+    display: flex;
+  }
+  .menu-navigation li {
+    border-right: 1px solid white;
   }
 }
 
@@ -117,3 +123,16 @@ table {
 //     color: $color_green-brand-color;
 //   }
 // }
+
+
+.fas.fa-quote-left {
+  color: $color_green-brand-color;
+  font-size: 125px;
+  line-height: 125px;
+}
+
+.fas.fa-quote-right {
+  color: $color_green-brand-color;
+  font-size: 125px;
+  line-height: 125px;
+}

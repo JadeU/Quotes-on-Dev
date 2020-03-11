@@ -31,8 +31,7 @@ a {
   display: block;
   width: 100%;
   display: flex;
-  justify-content: flex-end; 
-
+  justify-content: flex-end;
 
   ul {
     display: none;
@@ -91,6 +90,10 @@ a {
     text-decoration: none;
     font-family: 'Exo';
     padding: 10px;
+
+    p.bottom {
+      padding: none;
+    }
   }
 
   .current_page_item > a,

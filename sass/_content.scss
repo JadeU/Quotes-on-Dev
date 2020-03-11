@@ -32,10 +32,17 @@
   margin: 0 0 $base__space-unit;
 }
 
-.site-header{
+.site-header {
   text-align: center;
-} 
+}
 
-.site-main{
+.site-main {
   display: flex;
+
+  .page-id-208 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
