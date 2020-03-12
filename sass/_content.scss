@@ -39,10 +39,65 @@
 .site-main {
   display: flex;
 
-  .page-id-208 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  // .page-id-208 {
+  //   // display: flex;
+  //   // align-items: center;
+  //   // justify-content: center;
+  //   // flex-direction: column;
+  // }
+}
+
+.categories-container {
+  ul,
+  li {
+    display: inline;
+    padding: 6px;
   }
+  margin: 50px 50px;
+}
+
+.authors-container {
+  ul,
+  li {
+    display: inline;
+    padding: 6px;
+  }
+  margin: 50px 50px;
+}
+
+.tag-container {
+  ul,
+  a {
+    padding: 6px;
+  }
+  margin: 50px 50px;
+}
+
+.site-header {
+  margin: 30px;
+}
+
+.site-content {
+  display: flex;
+}
+
+.header-title {
+  padding-left: 50px;
+}
+
+.header-sub-title {
+  padding-left: 50px;
+}
+
+.entry-title {
+  margin-left: 60px;
+}
+
+.entry-content {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#quote-submit-form {
+  margin-left: 60px;
 }

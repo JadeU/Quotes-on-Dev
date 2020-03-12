@@ -11,9 +11,11 @@
 
 <div id="primary" class="content-area">
 	
+<?php get_template_part( 'template-parts/content', 'page' ); ?>
+
 	<main id="main" class="site-main" role="main">
 	
-		<?php get_template_part( 'template-parts/content', 'page' ); ?>
+	
 
 
 			<div class = "quote-sumbit-form-container">
